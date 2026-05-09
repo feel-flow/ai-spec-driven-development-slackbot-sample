@@ -1,0 +1,20 @@
+{
+  "name": "ai-spec-driven-development-slackbot-sample",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.21.2",
+    "better-sqlite3": "^11.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  }
+}
+
