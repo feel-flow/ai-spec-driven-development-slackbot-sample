@@ -33,6 +33,11 @@ flowchart LR
 | Slack Notifier | Send result and error notifications |
 | Audit Log | Record who changed what and when |
 
+## Runtime
+
+- Node.js 26.x LTS (feel-flow baseline). Source of truth: `engines.node` (`>=26.12.1`) in `package.json` and `.nvmrc`.
+- `better-sqlite3` is a native module; reinstall dependencies (`npm ci`) after switching Node majors.
+
 ## Dependency Rule
 
 Domain logic must not import Slack SDK objects. Handlers translate Slack payloads into domain commands before calling the state machine.
